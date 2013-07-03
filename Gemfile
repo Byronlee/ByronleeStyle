@@ -5,7 +5,7 @@ gem 'thin'
 gem 'turbolinks'
 gem "highcharts-rails" ,:git => 'git@github.com:Byronlee/highcharts-rails.git'
 gem 'pjax_rails'
-
+gem 'sqlite3'
 gem 'pg', "~> 0.15.1"
 
 gem "ancestry", "~> 2.0.0"
