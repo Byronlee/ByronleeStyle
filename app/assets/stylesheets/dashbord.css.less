@@ -1,0 +1,136 @@
+body{
+    background-color: #000;
+    color: #fff;
+    .infor{
+	width:32%;
+	float: left;
+	hight:100%;
+	background:#ccc;
+	img{
+	    width:100%;
+	    height:100%;
+	}
+    }
+    .dispaly{
+	width:68%;
+	float: right;
+	hight:100%;
+
+    }
+
+    .container{
+/*	background-color:#fff;*/
+	img{
+	    width: 100%;
+	    height:250px;
+	}
+	.resume{
+	    -webkit-border-image: url(/assets/border-imge.jpg) repeat;
+	    -moz-border-image:url(/assets/border-imge.jpg) 30 30 round;	/* Old Firefox */
+	    -webkit-border-image:url(/assets/border-imge.jpg) 30 30 round;	/* Safari and Chrome */
+	    -o-border-image:url(/assets/border-imge.jpg) 30 30 round;		/* Opera */
+	    border-image:url(/assets/border-imge.jpg) 30 30 round;
+
+
+	    border-width:10px;
+	    .portrait{
+		width: 200px;
+		height:200px;
+	/*	float:left*/
+	    }
+	    .information{
+		margin-left:10px;
+/*		float:left;*/
+
+	    }
+
+	}
+    }
+}
+
+
+
+.experience{
+    width: 3px;
+    height: 300px;
+    float: left;
+    background-color: #fff;
+    
+    .time{
+
+	width: 55px;
+	height: 55px;
+	border-radius: 55px;
+	background: linear-gradient(to bottom, #737C9D 0%,#565B78 100%);
+	left: -25px;
+	box-shadow: 0 0 1px 1px rgba(0,0,0,.1), 0px 2px 1px 1px rgba(0,0,0,.1);
+	color: #000;
+	font-size: 9px;
+	line-height: 55px;
+	text-align: center;
+	cursor: pointer;
+	background-color: #fff;
+    }
+    .description{
+	float: left;
+	margin: -45px 0 0 96px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* The console container element */
+    #console {
+      position: absolute;
+/*      width: 100%;*/
+      width:68%;
+      height: 100%;
+   /*   background-color:black;*/
+    }
+    /* The inner console element. */
+    .jqconsole {
+        padding: 10px;
+    }
+    /* The cursor. */
+    .jqconsole-cursor {
+        background-color: gray;
+    }
+    /* The cursor color when the console looses focus. */
+    .jqconsole-blurred .jqconsole-cursor {
+        background-color: #666;
+    }
+    /* The current prompt text color */
+    .jqconsole-prompt {
+        color: #0d0;
+    }
+    /* The command history */
+    .jqconsole-old-prompt {
+        color: #0b0;
+        font-weight: normal;
+    }
+    /* The text color when in input mode. */
+    .jqconsole-input {
+        color: #dd0;
+    }
+    /* Previously entered input. */
+    .jqconsole-old-input {
+        color: #bb0;
+        font-weight: normal;
+    }
+    /* The text color of the output. */
+    .jqconsole-output {
+        color: white;
+    }
