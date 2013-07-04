@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   rescue_from Exception do | exception|
-    redirect_to root_path
+#    redirect_to root_path
   end
 
 end
