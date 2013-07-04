@@ -18,15 +18,15 @@
 
 //= require jquery.transform-0.9.3.min_
 //= require jquery.RotateImageMenu
-//= require jquery.mousewheel
 
 
 
 
-//= require jqconsole
+
+
 //= require highcharts
 //= require cartogram_chart
 
-
+//= require jqconsole
 //= require_tree .
 

@@ -1,4 +1,6 @@
 $(function (){ 
+
+
     $('#my_skill').highcharts({
 	title : {
 	    text : ""
@@ -74,7 +76,7 @@ $(function (){
 	}]
 	
     });
-});
+})
 })
 
 
