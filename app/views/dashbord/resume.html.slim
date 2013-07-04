@@ -1,46 +1,251 @@
-.container-fluid
+
+.navbar-inverse.navbar.navbar-fixed-top
+  .navbar-inner style="border-bottom: 3px solid red;"
+    .container  style="width: 80%;background-color:#000"          
+      span.brand.pull-left
+        i.icon-home　　
+        a href="#{root_path}" 个人简历
+        span.divider-vertical
+
+      ul.nav.pull-right
+        li 设置
+        li 信息
+
+
+.container-fluid style="margin-top: 43px;"
   .row-fluid
     .container
-      img src="/assets/head.jpg"
-      .resume
-        img.portrait src="/assets/portrait.jpg"
-        .information
-          p 李江华(Byronlee)　http://weibo.com/ginchenorlee
-          p 姓名：李江华　　　　性别：男
-          p 年龄：２２　　　　　生日：１９９１.5.11
-          p 现居地：四川成都　　政治面貌：预备党员
-          p　专业：软件工程　　　学历：本科
-          p 英语水平：CET-4　　　大学：成都大学
+      .header.span12
+        img src="/assets/head.jpg"
+      .user_infor.span12
+        .span2
+          img.portrait src="/assets/portrait.jpg"
+          p 
+            i.icon-map-marker 荒废时间＝荒废生命
+          div class="progress progress-striped active"
+             .bar style="width: 25%;"
+        .span10
+          .information           
+            p
+              Strong 
+                i.icon-user&nbsp;李江华(Byronlee)
+              span 　http://weibo.com/ginchenorlee
+            p  
+              i.icon-star&nbsp;不懂创业，却用创业去诠释人生。
+            p
+              i.icon-tags
+              span.label.label-success 李江华
+              span.label.label-success 男
+              span.label.label-success ２２岁
+              span.label.label-success １９９１.5.11
+              span.label.label-success 四川成都
+              span.label.label-success 预备党员
+              span.label.label-success 成都大学
+              span.label.label-success 软件工程（本科在读，大四）
+              span.label.label-success CET-4　
+      h4.span11
+        span.label.label-important
+          i.icon-thumbs-up　技能分析　
         hr
-        h3　我的技能
-        #my_skill 
+      #my_skill.span11 style="height:350px;"
+      h4.span11
+        span.label.label-important style="margin-left:80%"
+          i.icon-coffee　 项目求职经历　
         hr
-        h3 项目求职经历
-        .experience
-          .axle
-          .content
-            .item
-              .time
-                span  大一
-              .description
-                span dasdfadsf
-            .item
-              .time
-                span 大二
-              .description
-                span 大三
+      .experience.span11
+        .axle
+        .content
+          .item
+            .time style="background-color:green;"
+              span 大四
+            .description
+              span 正在开发中...... 期待与你为伍(学校无课，能全职工作，任何情况以公司为主)
+          .item
+            .time
+              span 大三
+            .description
+              span 
+                a.label.label-warning href="http://ccde.cnpc.com.cn/ccde/?COLLCC=891803321&" target="_blank" 中国石油川庆钻探工程有限公司
+                span 的科技管理系统(rails/pgsql, 目前还在开发中)　在职
+                a.label.label-warning target="_blank" href="http://www.zhiyisoft.com/"知一软件
 
-        h3 工作案例
-        .experience
-          .axle
-          .content
-            .item
-              .time
-                span  大一
-              .description
-                span dasdfadsf
-            .item
-              .time
-                span 大二
-              .description
-                span 大三
+          .item
+            .time
+              span 大三
+            .description
+              a.label.label-warning target="_blank" href="http://www.88880808.com/"伊诚地产
+              span 　考勤管理系统(rails/mongodb)　在职
+              a.label.label-warning target="_blank" href="http://www.zhiyisoft.com/"知一软件
+          .item
+            .time
+              span 大三
+            .description
+              a.label.label-warning target="_blank" href="https://github.com/Byronlee/storycafe"  项目迭代开发工具
+              span storycafe(rails/mongodb)　在职
+              a.label.label-warning target="_blank" href="http://www.zhiyisoft.com/"知一软件
+          .item
+            .time
+              span 大三
+            .description
+              a.label.label-warning target="_blank" href="http://passwordfamily.ginchenorlee.com/" 在线密码管理 
+              span （rails/mongodb）
+          .item
+            .time
+              span 大二
+            .description
+              span android 手机远程控制app,mine
+          .item
+            .time
+              span 大二
+            .description
+              span android 基于重力感应的小游戏
+              a.label.label-warning target="_blank" href="https://github.com/Byronlee/ByronleeTeeter" ByronleeTeeter
+          .item
+            .time
+              span 大二
+            .description
+              span android 给GF量身定制app 
+              a.label.label-warning target="_blank" href="https://github.com/Byronlee/hellocattle" hellocattle
+          .item
+            .time
+              span 大二
+            .description
+              span php　
+              a.label.label-warning target="_blank" href="http://jwbgs.cdu.edu.cn/" 维护学校纪委办公室网站
+          .item
+            .time
+              span 大一
+            .description
+              span PHP 校内的社交平台
+              a.label.label-warning target="_blank" href="https://github.com/Byronlee/wowoyuan" 窝窝园
+              span （php/thinkphp/mysql, 主要包括三个板块：商场，论坛，垂直微薄，上线一年，目前无钱维护，已下线，但是目前个人还是比较喜欢这个平台）
+
+      h4.span11
+        span.label.label-important 
+          i.icon-coffee　 案例图集　
+        hr
+      .rm_wrapper.span11
+        = render 'view_picture'
+      h4.span11
+        span.label.label-important style="margin-left:80%"
+          i.icon-cogs　 我兴趣爱好　
+        hr
+      .interest.span11
+        .span3
+          img src="/assets/xingqu.jpg"
+        .span1
+          img src="/assets/jiantou.jpg"
+        .span8
+          ul style="list-style-type:square"
+            li 热爱健身
+            li 喜欢书法，收藏书法作品，目前喜欢柳体，草书，楷书，小篆
+            li 喜欢乐器，目前会的乐器有，横笛，陶笛，勋，葫芦丝，尤其热爱古筝
+            li 喜欢文学,也喜欢佛经
+            li 喜欢技术，但不沉溺于技术,喜欢交朋友，喜欢旅游，喜欢交流(大三上学期应学院要求，给大一大二的学弟学妹们做过培训讲座）
+            li 喜欢研究用户体验，参与产品设计
+            li 喜逛github，浏览喜欢的项目，提交pull request, 写写issues
+            li 
+              span 刷新浪微博
+              a.label.label-warning href="http://www.weibo.com/ginchenorlee"@Byron-lee
+              span ,关注各种技术大牛,最新技术，实时新闻
+            li 爱逛ruby-china,对里面大牛，持续关注，希望能在成都召开一次ruby聚会
+            li 爱逛(ruby-china,oschina，hacker news)，关注IT新技术新动向
+            li 没事也经常爱关像王垠，阮一峰，DHH,martinfowler,等人最新动态
+            li 当然最重要的一点就是创业，从没怠慢，一直在追求
+      h4.span11
+        span.label.label-important 
+          i.icon-comments　 自我评价　
+        hr
+      .comments.span11
+        .span8
+          ul style="list-style-type:square"
+            li 喜欢并组织团队活动
+            li 没有最优秀的个人，只有最优秀的团队，创建领导过团队
+            li 对团队思想和合作有自己独到的见解和经验
+            li 做过兼职，参加过各种比赛并得奖，也组织和参加过各种文艺比赛并得奖
+            li 喜欢程序，但是个人觉得不苦逼
+            li 因为我没有穿拖鞋，背心，牛仔裤，双肩包，头发油得发亮等标准程序员的特征(呵呵)
+            li 习惯站在用户和PM等角色思考问题
+            li 所有“不准打产品经理”的招聘原则在这里可以不用担心
+            li 比较聊得来，性格随和，责任感强，喜欢交朋友，但杜绝基友
+            li 兴趣爱好广，但不抽烟，不喝酒
+            li 喜欢折腾，喜欢尝试新语言并对比他们
+            li 喜欢新东西，喜欢创新
+            li 喜欢网页设计，喜欢研究
+            li 心情烦躁了，喜欢出去旅游
+        .span1
+          img src="/assets/jiantou.jpg"
+        .span3
+          img src="/assets/ziping.jpg"
+      h4.span11
+        span.label.label-important style="margin-left:80%"
+          i.icon-lightbulb　 目前计划提升的有　
+        hr
+      .strive.span11
+        .span4
+          h4.span3
+            i.icon-desktop
+          .span9
+            p 　巩固基础，包括scip, 计算机网络，操作系统，数据结构等
+        .span4
+          h4.span3
+            i.icon-edit
+          .span9
+            p 学习函数式编程scheme，haskell，对erlang 也做一些了解
+        .span4
+          h4.span3
+            i.icon-book
+          .span9
+            p 阅读<重构：改善既有代码的设计><人月神话><黑客与画家><代码未来><程序员的修炼思维>等书籍
+        .span4 style="margin-left: 0;"
+          h4.span3
+            i.icon-tint
+          .span9
+            p 产品设计，用户体验
+        .span4
+          h4.span3
+            i.icon-th-large
+          .span9
+            p DDD,设计模式，系统构架
+        .span4 
+          h4.span3
+            i.icon-search
+          .span9
+            p 大数据处理和挖掘,高并发，分布式集群
+      h4.span11
+        span.label.label-important 
+          i.icon-cogs　 我的求职意向　
+        hr
+      .apply.span11
+        .span4
+          img src="/assets/qiuzhi.jpg"
+        .span6
+          ul
+            li 
+              i.icon-heart　岗位：Ruby/Rails工程师
+            li 
+              i.icon-heart　工作地点：最好在四川成都
+      h4.span11
+        span.label.label-important style="margin-left:80%"
+          i.icon-comments　 联系方式　
+        hr
+      .contact.span11 
+        ul
+          li 
+            i.icon-envelope-alt 　邮箱： lbyronlee@gmail.com
+          li 
+            i.icon-user-md　 博客：
+            a href="http://ginchenorlee.com/" http：//ginchenorlee.com/
+          li 
+            i.icon-github 　github： 
+            a href="https://github.com/Byronlee"https：//github.com/Byronlee
+          li 
+            i.icon-pinterest　 微薄：　
+            a href="http://www.weibo.com/ginchenorlee" http：//www.weibo.com/ginchenorlee
+          li 
+            i.icon-phone-sign　 电话： 13880156590
+          li 
+            i.icon-stop 　QQ : 422483459
+        .alert.alert-info style="text-align:center"
+          p 
+            i.icon-hand-up 　嗨，看到这了，我也就快介绍完了，谢谢您的浏览！　如果你对我有感觉，那就联系我吧!＠Byronlee
