@@ -1,6 +1,5 @@
+
 $(function (){ 
-
-
     $('#my_skill').highcharts({
 	title : {
 	    text : ""
@@ -73,11 +72,8 @@ $(function (){
 	    color : '#DDDF0D',
 	    type : 'spline',
 	    data :  [70,68,70,50,23,17,25,25,62,70,68,69,66,70,63,60,20]
-	}]
-	
+	}]	
     });
 })
-})
-
 
 
