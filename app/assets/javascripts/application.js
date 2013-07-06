@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 
+
+
 //= require jquery.transform-0.9.3.min_
 //= require jquery.RotateImageMenu
 //= require highcharts

@@ -11,8 +11,8 @@ $(function () {
 	    case "1":
 		window.open("https://gist.github.com/Byronlee/b00a1a24c67f1f6c49d5")
 		break;
-	    case "2":
-		window.open("http://localhost:3000/dashbord/resume")
+	    case "2":               
+		window.open("http://style.ginchenorlee.com/dashbord/resume")
 		break;
 	    case "3":
 		window.open("http://resume.github.io/?Byronlee")

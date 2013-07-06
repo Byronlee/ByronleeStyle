@@ -2,7 +2,7 @@ ByronleeStyle::Application.routes.draw do
   root to: "dashbord#index"
   get "dashbord/resume"
   post "dashbord/send_email"
-  match '/:anything', to: "dashbord#index", as: :error, via: :get, :constraints => {:anything => /.*/}
+   match '/:anything', to: "dashbord#index", as: :error, via: :get, :constraints => {:anything => /.*/}
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

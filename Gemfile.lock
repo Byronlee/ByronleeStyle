@@ -1,10 +1,3 @@
-GIT
-  remote: git@github.com:Byronlee/highcharts-rails.git
-  revision: ff290c0a3da0a7e7c394bad5848b40b7b0165af5
-  specs:
-    highcharts-rails (3.0.2)
-      railties (>= 3.1)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -50,15 +43,15 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.6.2)
+    coffee-script-source (1.6.3)
     commonjs (0.2.6)
-    daemons (1.1.9)
     erubis (2.7.0)
-    eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
     font-awesome-rails (3.2.1.1)
       railties (>= 3.2, < 5.0)
+    highcharts-rails (3.0.2)
+      railties (>= 3.1)
     hike (1.2.3)
     i18n (0.6.4)
     jquery-rails (2.1.4)
@@ -125,10 +118,6 @@ GEM
     therubyracer (0.11.4)
       libv8 (~> 3.11.8.12)
       ref
-    thin (1.5.1)
-      daemons (>= 1.0.9)
-      eventmachine (>= 0.12.6)
-      rack (>= 1.0.0)
     thor (0.18.1)
     thread_safe (0.1.0)
       atomic
@@ -156,16 +145,16 @@ DEPENDENCIES
   cells (~> 3.8.8)
   chosen-rails
   font-awesome-rails (~> 3.2.1.1)
-  highcharts-rails!
+  highcharts-rails
   jquery-rails (= 2.1.4)
   less-rails (~> 2.3.3)
   pg (~> 0.15.1)
   pjax_rails
   rails (~> 4.0.0)
+  rake
   slim-rails (= 2.0.1)
   sqlite3
   therubyracer (~> 0.11.4)
-  thin
   turbolinks
   twitter-bootstrap-rails (~> 2.2.7)
   uglifier (>= 1.0.3)
