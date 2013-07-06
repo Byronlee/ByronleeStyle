@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:Byronlee/highcharts-rails.git
+  revision: ff290c0a3da0a7e7c394bad5848b40b7b0165af5
+  specs:
+    highcharts-rails (3.0.2)
+      railties (>= 3.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -50,8 +57,6 @@ GEM
       multi_json (~> 1.0)
     font-awesome-rails (3.2.1.1)
       railties (>= 3.2, < 5.0)
-    highcharts-rails (3.0.2)
-      railties (>= 3.1)
     hike (1.2.3)
     i18n (0.6.4)
     jquery-rails (2.1.4)
@@ -145,7 +150,7 @@ DEPENDENCIES
   cells (~> 3.8.8)
   chosen-rails
   font-awesome-rails (~> 3.2.1.1)
-  highcharts-rails
+  highcharts-rails!
   jquery-rails (= 2.1.4)
   less-rails (~> 2.3.3)
   pg (~> 0.15.1)

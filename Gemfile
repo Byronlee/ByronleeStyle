@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails',  '~> 4.0.0'
 gem 'turbolinks'
-gem "highcharts-rails" 
+gem "highcharts-rails" ,:git => 'git@github.com:Byronlee/highcharts-rails.git' 
 gem 'pjax_rails'
 gem 'sqlite3'
 gem 'pg', "~> 0.15.1"
