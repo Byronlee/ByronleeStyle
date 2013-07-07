@@ -39,7 +39,63 @@ $(function() {
 				origin				= ['155px', '930px'],
 				init				= function() {
 					configure();
-				}
+				//	initEventsHandler();
+				},
+				//initialize some events
+				initEventsHandler	= function() {
+					/*
+					next and previous arrows:
+					we will stop the slideshow if active,
+					and rotate each items images.
+					1 	rotate right
+					-1 	rotate left
+					*/
+					$rm_next.bind('click', function(e) {
+						stopSlideshow();
+						rotateImages(1);
+						return false;
+					});
+					$rm_prev.bind('click', function(e) {
+						stopSlideshow();
+						rotateImages(-1);
+						return false;
+					});
+					/*
+					start and stop the slideshow
+					*/
+					$rm_play.bind('click', function(e) {
+						startSlideshow();
+						return false;
+					});
+					$rm_pause.bind('click', function(e) {
+						stopSlideshow();
+						return false;
+					});
+					/*
+					adds events to the mouse and left / right keys
+					*/
+					$(document).bind('mousewheel', function(e, delta) {
+						if(delta > 0) {
+							stopSlideshow();
+							rotateImages(0);
+						}	
+						else {
+							stopSlideshow();
+							rotateImages(1);
+						}	
+						return false;
+					}).keydown(function(e){
+						switch(e.which){
+							case 37:
+								stopSlideshow();
+								rotateImages(0);
+								break;
+							case 39:
+								stopSlideshow();
+								rotateImages(1);
+								break;
+						}
+					});
 				},
 				/*
 				rotates each items images.
