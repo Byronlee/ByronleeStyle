@@ -1,17 +1,21 @@
 ByronleeStyle::Application.configure do
 
-  config.cache_classes = false
 
-  config.eager_load = false
+  config.cache_classes = true
   config.consider_all_requests_local       = true
-  config.action_controller.perform_caching = false
-  config.action_mailer.raise_delivery_errors = false
+  config.serve_static_assets = true
+  config.assets.compress = true
+  config.assets.compile = true
+  config.assets.digest = true   
+  config.log_level = :warn
+  config.logger = Logger.new("#{Rails.root}/log/#{Rails.env}.log")
+  config.assets.precompile += %w( application.js )
+  config.i18n.fallbacks = true
+  config.active_support.deprecation = :notify
 
-  config.active_support.deprecation = :log
 
-  config.active_record.migration_error = :page_load
 
-  config.assets.debug = true
+  
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :address              => "smtp.gmail.com",
