@@ -6,7 +6,7 @@ body style="background-color: #000;margin:0;padding:0;font-family:Arial;color: #
         i class="icon-comments" 给我留言
     form.form-horizontal style="margin: 0 0 0;" action="#{dashbord_send_email_path}" method="post"
       .modal-body
-        textarea.input-xlarge#textarea name="comments" rows="4" style="width:95%;"
+        textarea.input-xlarge#textarea name="comments" required="required" rows="4" style="width:95%;margin-bottom: 33px;"
       .modal-footer
         a href="#" class="btn" data-dismiss="modal" 关闭
         button type="submit" class="btn btn-primary" data-disable-with="发送中..." 确定提交
