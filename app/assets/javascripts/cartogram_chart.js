@@ -8,7 +8,7 @@ $(function (){
 	    enabled : false
 	},
 	xAxis : [{
-	    categories :  ['团队精神','文艺气息','英语四级', 'J2EE/J2ME/J2SE','TDD/BDD/DDD/敏捷开发', 'ruote/state_machine/DSL', '面向对象编程','设计模式','mapreduce', 'ruby/rails','linux','emacs/git','mysql/mongodb/pgsql','前台开发,前台框架,设计','php','Andorid','nodejs'] ,
+	    categories :  ['团队精神','文艺气息','英语四级', 'J2EE/J2ME/J2SE','TDD/BDD/DDD/敏捷开发', 'Ruote/State_Machine/DSL', '面向对象编程','设计模式','Mapreduce', 'Ruby/Rails','Linux','Emacs/Git','Mysql/Mongodb/Pgsql','前台开发,前台框架,设计','Php','Andorid','NodeJs'] ,
 	    labels : {
 		rotation : 320,
 		x : 0,
