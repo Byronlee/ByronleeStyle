@@ -4,7 +4,7 @@ gem 'rails',  '~> 4.0.0'
 gem 'turbolinks'
 gem "highcharts-rails"  
 gem 'pjax_rails'
-gem 'sqlite3'
+#gem 'sqlite3'
 gem 'pg', "~> 0.15.1"
 
 gem "ancestry", "~> 2.0.0"
