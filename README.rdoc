@@ -1,9 +1,5 @@
-
 = Welcome to Rails
-
-[![Build Status](https://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME].png)](https://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME])
-
-
+{<img src="https://travis-ci.org/Byronlee/ByronleeStyle.png?branch=master" alt="Build Status" />}[https://travis-ci.org/Byronlee/ByronleeStyle]
 
 
 Rails is a web-application framework that includes everything needed to create
