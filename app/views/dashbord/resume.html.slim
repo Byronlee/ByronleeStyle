@@ -42,7 +42,13 @@
               span.label.label-success CET-4　
       h4.span11
         span.label.label-important
-          i.icon-thumbs-up　技能分析　
+          i.icon-star　技能分析
+        span
+          span.support_table style="float: right;margin-right: 25px;"
+            a.support href= "#{dashbord_support_path}"  data-remote="true"
+              span.label.label-important style="background-color: #FF8C00;"
+                i.icon-thumbs-up style="font-size: 20px;"
+                span 赞一个（#{Support.count+615}）
         hr
       script src="/assets/cartogram_chart.js" type="text/javascript"
       #my_skill.span11 style="height:350px;"
@@ -255,3 +261,11 @@
         .alert.alert-info style="text-align:center"
           p 
             i.icon-hand-up 　嗨，看到这了，我也就快介绍完了，谢谢您的浏览！　如果你对我有感觉，那就联系我吧!＠Byronlee
+      #disqus_thread style="padding: 80px;"
+      javascript:
+        var disqus_shortname = 'ginchenorlee'; 
+          (function() {
+             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.jsx';
+             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+           })();

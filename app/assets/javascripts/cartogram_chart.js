@@ -1,5 +1,16 @@
 
 $(function (){ 
+    //赞一个
+    $('.support').on('ajax:error', function(event, xhr, status) {
+	alert("网络异常，请稍后再试！");
+	$('.support').find("i").removeClass("icon-spinner icon-spin").addClass("icon-thumbs-up")
+    }).on('ajax:success', function(data) {
+	$(".support_table").html('<span class="label label-important" style="background-color: #999999;"><i class="icon-thumbs-up">你真有眼光 ^_^</i></span>')	
+    }).on('ajax:beforeSend', function(data) {
+	$('.support').find("i").removeClass("icon-thumbs-up").addClass("icon-spinner icon-spin")
+    })
+
+
     $('#my_skill').highcharts({
 	title : {
 	    text : ""

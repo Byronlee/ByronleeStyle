@@ -7,11 +7,33 @@ class DashbordController < ApplicationController
   def resume
   end
 
-  def send_email
-    recipient = 'lbyronlee@gmail.com'
-    subject ="简历上面留言"
-    Emailer.contact(recipient, subject, params[:comments]).deliver
-    redirect_to root_path
+  def support
+    Support.create(support_hash request)
+    send_email("简历赞一个平台通知",user_infor(request))
   end
 
+  def send_email subject,content
+    recipient = 'lbyronlee@gmail.com'
+    Emailer.contact(recipient, subject, content).deliver
+  end
+
+
+  def message
+    Message.create(support_hash(request).merge!({:message => params[:comments]}))
+    send_email "简历留言通知服务","留言信息：　　"+ params[:comments]+"．　　　　　　　　　－－－－－－－－－　"+user_infor(request)
+    redirect_to root_path
+  end
+  
+  
+  private
+  def support_hash request
+    { :ip => request.remote_ip,
+       :user_agent => request["HTTP_USER_AGENT"],
+       :ip_infor => IpReverse.reverse(request.remote_ip)
+     }
+  end
+
+  def user_infor request
+    "用户ip信息:　　"+IpReverse.reverse(request.remote_ip).to_s+"　　浏览器操作系统信息:　　"+env["HTTP_USER_AGENT"]
+  end
 end
