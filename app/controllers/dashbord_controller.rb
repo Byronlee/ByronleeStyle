@@ -29,12 +29,11 @@ class DashbordController < ApplicationController
   def support_hash request
     {  :ip => request.remote_ip,
        :user_agent => request["HTTP_USER_AGENT"],
-       :time => Time.now.to_s ,
        :ip_infor => IpReverse.reverse(request.remote_ip)
      }
   end
 
   def user_infor request
-    "用户ip信息:"+IpReverse.reverse(request.remote_ip).to_s+"　　浏览器操作系统信息:"+env["HTTP_USER_AGENT"]
+    "时间:"+Time.now.to_s+"  用户ip信息:"+IpReverse.reverse(request.remote_ip).to_s+"　　浏览器操作系统信息:"+env["HTTP_USER_AGENT"]
   end
 end
